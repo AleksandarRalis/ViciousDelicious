@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicious Delicious Official Website</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Vicious Delicious</a>
+            
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="hamburger navbar-toggler" type="button" id="hamburgerBtn">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Desktop Menu -->
+            <div class="desktop-menu navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#members">Band Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#repertoire">Repertoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="list-unstyled ps-4">
+            <li class="mb-3">
+                <a href="#home" class="text-decoration-none text-dark fs-5" onclick="closeMobileMenu()">Home</a>
+            </li>
+            <li class="mb-3">
+                <a href="#members" class="text-decoration-none text-dark fs-5" onclick="closeMobileMenu()">Band Members</a>
+            </li>
+            <li class="mb-3">
+                <a href="#repertoire" class="text-decoration-none text-dark fs-5" onclick="closeMobileMenu()">Repertoire</a>
+            </li>
+            <li class="mb-3">
+                <a href="#about" class="text-decoration-none text-dark fs-5" onclick="closeMobileMenu()">About Us</a>
+            </li>
+            <li class="mb-3">
+                <a href="#contact" class="text-decoration-none text-dark fs-5" onclick="closeMobileMenu()">Contact</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Carousel Section -->
+    <section id="home" class="carousel-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/carousel_logo_final.png" class="d-block w-100" alt="Band Image 1">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Band Members Section -->
+    <section id="members" class="bg-white">
+        <div class="container">
+            <h1 class="text-center mb-5 section-heading">Band Members</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="band-member-card">
+                        <img src="Images/Anastasija_1.jpg" alt="John Smith">
+                        <h1>Anastasija</h1>
+                        <p>Vocals</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="band-member-card">
+                        <img src="Images/Ralis_2.jpg" alt="Sarah Johnson">
+                        <h1>Ralis</h1>
+                        <p>Acoustic Guitar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Repertoire Section -->
+    <section id="repertoire" class="bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5 section-heading">Our Repertoire</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="repertoire-item">
+                        <strong>Harry</strong> - Watermelon sugar
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Katarina And The Waves</strong> - Walking on sunshine
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Amy Winehouse</strong> - Valerie
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>George Michael</strong> - Faith
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Kid Rock</strong> - All summer long
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Jessie J</strong> - Price tag
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Dua Lipa</strong> - Levitating
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Ben E. King</strong> - Stand by me
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>The Point Sisters</strong> - I'm so excited
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Whitney Houston</strong> - I wanna dance with somebody
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Adele</strong> - Rolling in the deep
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="repertoire-item">
+                        <strong>Dua Lipa</strong> - Be the one
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>The Cranberries</strong> - Zombie
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Dua Lipa</strong> - Don't start now
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>ABBA</strong> - Gimme
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>The Black Keys</strong> - Lonely boy
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Sting</strong> - Englishman in New York
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Miley</strong> - Flowers
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Jessie J</strong> - Domino
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Lauryn Hill</strong> - Can't take my eyes off you
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Багаж</strong> - Името твое
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Калиопи</strong> - Дали ме сакаш
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="repertoire-item">
+                        <strong>Калиопи</strong> - Обои ме
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Калиопи</strong> - Не ми го земај времето
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Елена Ристеска</strong> - Некаде далеку
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Умирам без тебе
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Ќе биде се во ред
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Кажи ми
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Од нас зависи
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Заборав
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Каролина</strong> - Ајде да летаме
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тамара Тодевска</strong> - 1003
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Кристина Арнаудова</strong> - Прашина
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="repertoire-item">
+                        <strong>Ареа</strong> - Сите мои слики
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Ареа</strong> - Одведи ме
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Ареа</strong> - Фрекфенција на љубовта
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Ареа</strong> - Нешто Недостасува
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Елена Ристеска</strong> - Она другото
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тоше</strong> - Руски рулет
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тоше</strong> - По тебе
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тоше</strong> - соба за тага
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тоше</strong> - Студена
+                    </div>
+                    <div class="repertoire-item">
+                        <strong>Тоше</strong> - Рани на Усните
+                    </div>
+                </div>
+            </div>
+            <h3 class="text-center mt-5 mb-0 fancy-heading">And any song you desire, if we know it ofcourse :))</h3>
+        </div>
+    </section>
+    
+    <!-- About Us Section -->
+    <section id="about" class="bg-white">
+        <div class="container">
+            <h1 class="text-center mb-5 section-heading">About Us</h1>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead text-center mb-4">
+                        Welcome to our music band! We are a passionate group of two different individuals dedicated to bringing you the best live performances.
+                    </p>
+                    <p class="text-center">
+                        Vicious Delicious was born from a spark that mixed attitude, melody, and a taste for the unexpected. 
+                        Our name came from a joke during an early rehearsal—someone said our sound felt “vicious in energy but delicious to the ears,” and it stuck instantly. 
+                        Two years later, that spirit still drives us. We blend pop‑rock world hits with the unmistakable flavor of Macedonian pop‑rok, 
+                        creating a live atmosphere that feels both familiar and fiercely our own. Every show is a celebration of rhythm, nostalgia, 
+                        and raw fun, powered by a band that lives for the stage and the crowd that keeps coming back for more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h1 class="text-center mb-5 section-heading">Contact Us</h1>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Alert Messages -->
+                    <div id="formAlert" class="alert d-none" role="alert"></div>
+                    
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
+                                <span id="submitBtnText">Send Message</span>
+                                <span id="submitBtnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4 text-center mb-3">
+                    <h5>Email</h5>
+                    <p>vicious.delicious.booking@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>Phone</h5>
+                    <p>+389 71 581 517</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>Social Media</h5>
+                    <a href="https://www.instagram.com/viciousdeliciousnew/"><p>Instagram</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Music Band. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu functionality
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        menuOverlay.addEventListener('click', closeMobileMenu);
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 70; // Account for fixed navbar
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        const formAlert = document.getElementById('formAlert');
+        const submitBtn = document.getElementById('submitBtn');
+        const submitBtnText = document.getElementById('submitBtnText');
+        const submitBtnSpinner = document.getElementById('submitBtnSpinner');
+
+        // Determine API URL (use relative path for same origin, or configure for production)
+        // If accessing via file:// protocol, use localhost
+        let API_URL;
+        if (window.location.protocol === 'file:') {
+            API_URL = 'http://localhost:3000/api/send-email';
+        } else if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            API_URL = `http://${window.location.hostname}:3000/api/send-email`;
+        } else {
+            API_URL = '/api/send-email';
+        }
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Hide previous alerts
+            formAlert.classList.add('d-none');
+            formAlert.classList.remove('alert-success', 'alert-danger');
+
+            // Disable submit button and show spinner
+            submitBtn.disabled = true;
+            submitBtnText.textContent = 'Sending...';
+            submitBtnSpinner.classList.remove('d-none');
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                const data = await response.json();
+
+                if (response.ok && data.success) {
+                    // Success
+                    formAlert.classList.remove('d-none');
+                    formAlert.classList.add('alert-success');
+                    formAlert.textContent = 'Thank you! Your message has been sent successfully. We\'ll get back to you soon.';
+                    
+                    // Reset form
+                    contactForm.reset();
+                } else {
+                    // Error from server
+                    formAlert.classList.remove('d-none');
+                    formAlert.classList.add('alert-danger');
+                    formAlert.textContent = data.error || 'Failed to send message. Please try again.';
+                }
+            } catch (error) {
+                // Network or other error
+                console.error('Error:', error);
+                formAlert.classList.remove('d-none');
+                formAlert.classList.add('alert-danger');
+                formAlert.textContent = 'Unable to connect to server. Please check your connection and try again.';
+            } finally {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtnText.textContent = 'Send Message';
+                submitBtnSpinner.classList.add('d-none');
+
+                // Scroll to alert
+                formAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    </script>
+</body>
+</html>
